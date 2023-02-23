@@ -1,0 +1,5 @@
+checks args, it accepts only 1 arg: IP addr.
+
+checks IP addr.
+
+sanitizes it.(http or https varsa)
