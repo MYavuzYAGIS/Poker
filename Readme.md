@@ -2,7 +2,6 @@ A small tool for automating early-recon phase trivial enums for pentesting.
 
 Not a top-notch quality code,but rather a dirty and quick one.
 
-currently WIP.
 
 -- checks robots.txt
 
@@ -21,3 +20,5 @@ currently WIP.
 -- lists image names and locations.
 
 These things can be boring to handle manually, distracting, and time consuming. Hence let the gopher deal with it.
+
+**currently WIP.**
