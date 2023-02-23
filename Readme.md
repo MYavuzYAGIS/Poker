@@ -23,6 +23,4 @@ These things can be boring to handle manually, distracting, and time consuming. 
 
 **currently WIP.**
 
-<p align="center">
 ![gopher](ico/gopher.png)
-</p>
