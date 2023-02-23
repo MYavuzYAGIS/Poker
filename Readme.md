@@ -1,6 +1,6 @@
 A small tool for automating early-recon phase trivial enums for pentesting.
 
-Not a top-notch quality code,but rather a dirty and quick one.
+**Not** a top-notch quality code,but rather a dirty and quick one.
 
 
 -- checks robots.txt
@@ -22,3 +22,6 @@ Not a top-notch quality code,but rather a dirty and quick one.
 These things can be boring to handle manually, distracting, and time consuming. Hence let the gopher deal with it.
 
 **currently WIP.**
+
+
+![gopher](ico/gopher.png)
