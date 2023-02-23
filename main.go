@@ -3,24 +3,25 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
+	"net/http"
 )
 
 func main() {
-	//---Define the various flags---
-	url := flag.String("msg", "Hello, World!",
-		"Message to print on console")
+	// Define the single flag: url
 
-	spacingPtr := flag.Bool("spacing", true,
-		"Insert a space between messages")
-	//---parse the command line into the defined flags---
+	url := flag.String("url", "Please provide a valid URL without http or https", "127.0.0.1")
 	flag.Parse()
+	fmt.Println("url", *url)
 
-	fmt.Print(*url)
-	if *spacingPtr == true {
-		fmt.Print(" ")
+	connect(url)
+}
+
+func connect(url *string) {
+	resp, err := http.Get(*url)
+	if err != nil {
+		log.Fatalln(err)
 	}
-	//---returns all the non-flags arguments---
-	for _, arg := range flag.Args() {
-		fmt.Println(arg, " ")
-	}
+	fmt.Println("connected to ==> ", *url)
+	fmt.Println(resp)
 }
