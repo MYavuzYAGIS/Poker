@@ -29,13 +29,9 @@ func connect(url string) {
 	defer resp.Body.Close()
 	statusOK := resp.StatusCode >= 200 && resp.StatusCode < 400
 	if !statusOK {
-		fmt.Println("Non-OK HTTP status:", resp.StatusCode)
+		fmt.Println(resp.StatusCode, "returned as status Code. Connection failed")
 		return
 	}
 	color.BlueString("connected to ==> ", url)
 	fmt.Println("\n", "====================================")
-	fmt.Println(resp)
-	fmt.Println("\n", "====================================")
 }
-
-// TODO: if url is given without a scheme, try adding scheme(http://) or (https://)
