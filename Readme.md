@@ -5,17 +5,17 @@ A small tool for automating early-recon phase trivial enums for pentesting.
 usage: poker --url https://xyz.dev
 
 
--- checks robots.txt
+-- checks robots.txt [+]
 
 -- checks hidden html comments.
 
--- checks various login pages.
+-- checks various login pages. [+]
 
 -- checks non-standard Javascript files.
 
 -- searches "/" page source for interesting keywords.
 
--- checks cookies.
+-- checks cookies. [+]
 
 -- lists given urls in the page.
 

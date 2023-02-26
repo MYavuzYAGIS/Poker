@@ -1,5 +1,7 @@
 github.com/fatih/color v1.14.1 h1:qfhVLaG5s+nCROl1zJsZRxFeYrHLqWroPOQ8BWiNb4w=
 github.com/fatih/color v1.14.1/go.mod h1:2oHN61fhTpgcxD3TSWCgKDiH1+x4OiDVVGH8WlgGZGg=
+github.com/lunux2008/xulu v0.0.0-20160308154621-fff51ca7218e h1:iAGWUI7D6hezNAstXvEapnCbkIkIxDXuLuWEO275D/w=
+github.com/lunux2008/xulu v0.0.0-20160308154621-fff51ca7218e/go.mod h1:XxHK3kRbzMB1MyA9rbSEaxYir37CZZZNhCRtnyWpZkg=
 github.com/mattn/go-colorable v0.1.13 h1:fFA4WZxdEF4tXPZVKMLwD8oUnCTTo08duU7wxecdEvA=
 github.com/mattn/go-colorable v0.1.13/go.mod h1:7S9/ev0klgBDR4GtXTXX8a3vIGJpMovkB8vQcUbaXHg=
 github.com/mattn/go-isatty v0.0.16/go.mod h1:kYGgaQfpe5nmfYZH+SKPsOc2e4SrIfOl2e/yFXSvRLM=

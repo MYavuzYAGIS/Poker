@@ -16,4 +16,5 @@ func main() {
 	flag.Parse()
 	helpers.Checkconnect(*url)
 	utils.Checkfiles(*url)
+	utils.Cookie(*url)
 }

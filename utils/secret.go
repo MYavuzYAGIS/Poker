@@ -3,7 +3,6 @@ package utils
 import (
 	"fmt"
 	"io"
-	"net/http"
 
 	"github.com/fatih/color"
 )
@@ -17,12 +16,9 @@ func Checkfiles(url string) {
 	for i := 0; i < len(FILES_TO_CHECK); i++ {
 		extension := FILES_TO_CHECK[i]
 		url = url + extension
-		resp, err := http.Get(url)
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
+		resp := Connect(url)
 		statusOK := resp.StatusCode >= 200 && resp.StatusCode < 400
+
 		if !statusOK {
 			color.Red("[-] Could not find: %v ", extension)
 			continue
