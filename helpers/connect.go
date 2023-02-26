@@ -20,6 +20,6 @@ func Checkconnect(url string) {
 		fmt.Println(resp.StatusCode, "returned as status Code. Connection failed")
 		return
 	}
-	fmt.Println("connected to ==> ", url)
+	color.Green("connected to ==> %v ", url)
 	fmt.Println("\n", "====================================")
 }
