@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
 	"net/http"
 
 	"github.com/MYavuzYAGIS/Poker/helpers"
@@ -24,12 +23,10 @@ func connect(url string) {
 	helpers.IsUrl(url)
 	resp, err := http.Get(url)
 	if err != nil {
-		log.Fatalln(err)
 		color.Red("Cannot connect to the given URL")
 		return
 	}
 	defer resp.Body.Close()
-	fmt.Println(resp.StatusCode)
 	statusOK := resp.StatusCode >= 200 && resp.StatusCode < 400
 	if !statusOK {
 		fmt.Println("Non-OK HTTP status:", resp.StatusCode)
