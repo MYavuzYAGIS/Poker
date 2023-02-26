@@ -6,19 +6,23 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/MYavuzYAGIS/Poker/helpers"
 	"github.com/fatih/color"
 )
 
 func main() {
 	// Define the single flag: url
 
-	url := flag.String("url", "Please provide a valid URL without http or https", "127.0.0.1")
+	helpers.Printbanner()
+
+	url := flag.String("url", "Please provide a valid URL WITH http or https", "http://127.0.0.1")
 	flag.Parse()
-	connect(url)
+	connect(*url)
 }
 
-func connect(url *string) {
-	resp, err := http.Get(*url)
+func connect(url string) {
+	helpers.IsUrl(url)
+	resp, err := http.Get(url)
 	if err != nil {
 		log.Fatalln(err)
 		color.Red("Cannot connect to the given URL")
@@ -31,7 +35,7 @@ func connect(url *string) {
 		fmt.Println("Non-OK HTTP status:", resp.StatusCode)
 		return
 	}
-	color.Blue("connected to ==> ", *url)
+	color.BlueString("connected to ==> ", url)
 	fmt.Println("\n", "====================================")
 	fmt.Println(resp)
 	fmt.Println("\n", "====================================")
