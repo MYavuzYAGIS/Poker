@@ -14,7 +14,7 @@ func Cookie(url string) {
 	if len(cookies) == 0 {
 		fmt.Println("No Cookies detected")
 	} else {
-		fmt.Println("cookies")
+		fmt.Println("Cookies:")
 		for _, cookie := range resp.Cookies() {
 			color.Green("Found a cookie named: %v, %v", cookie.Name, cookie.Value)
 		}
