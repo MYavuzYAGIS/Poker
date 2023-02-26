@@ -7,6 +7,7 @@ import (
 )
 
 func Cookie(url string) {
+	fmt.Println(" ")
 	color.Green("Checking for cookies.")
 	fmt.Println("=======================")
 	resp := Connect(url)

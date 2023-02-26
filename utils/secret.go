@@ -32,6 +32,7 @@ func Checkfiles(url string) {
 			color.Red("Could not read the Response Body")
 		}
 		fmt.Println(string(body))
+		fmt.Println("Continuing next targets...")
 
 	}
 }
