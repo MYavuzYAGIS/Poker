@@ -8,7 +8,7 @@ import (
 	"github.com/fatih/color"
 )
 
-var FILES_TO_CHECK = [6]string{"/robots.txt", "/secret.txt", "/secrets.txt", "/login.html", "/login.php", "/login.aspx"}
+var FILES_TO_CHECK = [17]string{"/robots.txt", "/secret.txt", "/secrets.txt", "/login.html", "/login.php", "/login.aspx", "/cgi-bin", "/img", "/images", "/config.php", "/../../../../../../../etc/passwd", "/api", "/admin", "/cache", "/LICENSE.txt", "/upload", "cron.php"}
 
 func Checkfiles(url string) {
 	color.Green("Checking for low hanging urls. \n")
