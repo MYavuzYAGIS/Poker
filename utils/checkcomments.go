@@ -22,5 +22,12 @@ func CheckHTMLComments(url string) {
 	}
 	bodyString := string(body)
 	matched, _ := regexp.MatchString(COMMENT, bodyString)
-	fmt.Println(matched)
+	if !matched {
+		fmt.Println("The Page Source Code does not contain any comments")
+	} else {
+		re := regexp.MustCompile("(?s)<!--.*?\\-->")
+		fmt.Println("Comments found, Reading Below:")
+		fmt.Println(re.FindString(bodyString))
+
+	}
 }
