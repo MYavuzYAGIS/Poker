@@ -14,8 +14,9 @@ func main() {
 	url := flag.String("url", "Please provide a valid URL WITH http or https", "http://127.0.0.1")
 	flag.Parse()
 	helpers.Checkconnect(*url)
-	utils.Checkfiles(*url)
-	utils.Cookie(*url)
-	utils.CheckHTMLComments(*url)
-	utils.InterestingKeywors(*url)
+	// utils.Checkfiles(*url)
+	// utils.Cookie(*url)
+	// utils.CheckHTMLComments(*url)
+	// utils.InterestingKeywors(*url)
+	utils.CheckImageNames(*url)
 }
