@@ -29,3 +29,5 @@ func InterestingKeywors(url string) {
 		}
 	}
 }
+
+// TODO: also check urls.

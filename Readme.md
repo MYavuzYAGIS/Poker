@@ -20,13 +20,11 @@ usage: poker --url https://xyz.dev
 
 -- checks various login pages. [+]
 
--- checks non-standard Javascript files.
+-- checks non-standard Javascript files. 
 
 -- searches "/" page source for interesting keywords.[+]
 
 -- checks cookies. [+]
-
--- lists given urls in the page.
 
 -- lists image names and locations.[+]
 
