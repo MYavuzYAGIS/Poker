@@ -20,16 +20,15 @@ usage: poker --url https://xyz.dev
 
 -- checks various login pages. [+]
 
--- checks non-standard Javascript files. 
-
 -- searches "/" page source for interesting keywords.[+]
 
 -- checks cookies. [+]
+
+-- checks inline JS [+]
 
 -- lists image names and locations.[+]
 
 These things can be boring to handle manually, distracting, and time consuming. Hence let the gopher deal with it.
 
-**currently WIP.**
 
 ![gopher](ico/gopher.png)
