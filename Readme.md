@@ -1,3 +1,10 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/myavuzyagis/poker/badge)](https://www.codefactor.io/repository/github/myavuzyagis/poker)
+
+
+
+
+
+
 A small tool for automating early-recon phase trivial enums for pentesting.
 
 Generally useful for CTFs rather than real time scenarios.
