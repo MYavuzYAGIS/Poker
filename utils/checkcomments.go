@@ -3,9 +3,12 @@ package utils
 import (
 	"fmt"
 	"io/ioutil"
+	"regexp"
 
 	"github.com/fatih/color"
 )
+
+const COMMENT = "<!--"
 
 func CheckHTMLComments(url string) {
 	fmt.Println(" ")
@@ -18,5 +21,6 @@ func CheckHTMLComments(url string) {
 		fmt.Println("an error occured", err)
 	}
 	bodyString := string(body)
-	fmt.Println(bodyString)
+	matched, _ := regexp.MatchString(COMMENT, bodyString)
+	fmt.Println(matched)
 }
