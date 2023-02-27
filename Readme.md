@@ -7,13 +7,13 @@ usage: poker --url https://xyz.dev
 
 -- checks robots.txt [+]
 
--- checks hidden html comments.
+-- checks hidden html comments. [+]
 
 -- checks various login pages. [+]
 
 -- checks non-standard Javascript files.
 
--- searches "/" page source for interesting keywords.
+-- searches "/" page source for interesting keywords.[+]
 
 -- checks cookies. [+]
 

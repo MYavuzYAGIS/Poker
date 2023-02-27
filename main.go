@@ -13,8 +13,9 @@ func main() {
 	helpers.Printbanner()
 	url := flag.String("url", "Please provide a valid URL WITH http or https", "http://127.0.0.1")
 	flag.Parse()
-	// helpers.Checkconnect(*url)
+	helpers.Checkconnect(*url)
 	// utils.Checkfiles(*url)
 	// utils.Cookie(*url)
-	utils.CheckHTMLComments(*url)
+	// utils.CheckHTMLComments(*url)
+	utils.InterestingKeywors(*url)
 }
